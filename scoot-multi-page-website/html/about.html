@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Scoot About</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+     <div class="app"> 
+      <a href="../index.html" class="scoot-image"><img src="../assets/logo.svg"></a>
+      <nav class=nav-bar>
+        <a href="../html/about.html">About</a>
+        <a href="../html/locations.html">Location</a>
+        <a href="../html/careers.html">Careers</a>
+      </nav>
+     </div>  
+      <button class="get">Get Scootin</button>
+      <div class="nav-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/locations.html">Location</a></li>
+      <li><a href="../html/careers.html">Careers</a></li>
+      
+      <button class="getting">Get Scootin</button>
+    </div>    
+  </header>
+  
+  <div class="about">
+    <img src="../assets/images/about-hero-desktop.jpg">
+    <div class="circles">
+      <img src="../assets/patterns/white-circles.svg">
+    </div>
+    <h1 class="about-text">About</h1>
+  </div>
+
+  <div class="mobile-container">
+    <div class="mobile-content">
+      <h1 class="mobile">Mobility for the <br>digital era</h1>
+      <p class="message">
+        Getting around should be simple (and even fun!) for everyone.<br> We embrace technology to provide low cost, smart access <br>to scooters at your fingertips. 
+      </p>
+      <button class="learns">Learn More</button>
+    </div>
+
+    <div class="images">
+      <img src="../assets/images/digital-era.jpg" class="phone">
+      <img src="../assets/patterns/left-upward-arrow.svg" class="my-arrow">
+    </div>
+  </div>
+
+  <div class="container4">
+    <div class="content-a">
+      <div class="city">
+        <img src="../assets/images/better-living.jpg">
+      </div>
+      <div class="right-angle">
+        <img src="../assets/patterns/right-arrow.svg">
+      </div>
+    </div>
+    <div class="content-b">
+      <h1 class="page">Better than urban <br class="break">living</h1>
+      <p class="payment">We're helping connect cities and bring people closer <br class="break">together. Our scooters are also fully-electric and we<br class="break"> offset the minimal carbon footprint for each ride.</p>
+    </div>
+  </div>
+  
+  <section id="container2">
+    <div class="join">Our values</div>
+
+    <div class="tech-container">
+      <div class="tech-images">
+        <div class="integrity">
+          <img src="../assets/images/our-tech.jpg" class="our-photo">
+          <h1 class="mobility">Our tech</h1>
+          <p class="mobility-text">We're using cutting edge technology to drive <br>accessible urban transportation forward. Our fully<br> electric scooters are a joy to ride!</p>
+        </div>
+
+        <div class="integrity">
+          <img src="../assets/images/our-integrity.jpg" class="our-photo">
+          <h1 class="mobility">Our integrity</h1>
+          <p class="mobility-text">We're fully committed to deliver a great yet safe,<br> sustainable micro-mobility experience in every<br> city we serve.</p>
+        </div>
+
+        <div class="integrity">
+          <img src="../assets/images/our-community.jpg" class="our-photo">
+          <h1 class="mobility">Our community</h1>
+          <p class="mobility-text">We support every community we serve. All<br> workers are paid a living wage based on their <br>location and are Scoot employees.</p>
+        </div>
+      </div>
+    </div>
+    
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content1">
+        <h1 class="footer-text">Sign up and <br>Scoot off today</h1>
+      </div>
+      
+      <div class="footer-icons">
+        <div class="icon1"><img src="../assets/icons/app-store.svg"></div>
+      <div class="icon2"><img src="../assets/icons/google-play.svg"></div>
+      </div>
+      <div class="footer-content2">
+        <img src="../assets/patterns/white-circles.svg">
+      </div>
+    </div>
+    <div class="footer-links-container">
+      <div class="links">
+        <a href="../index.html" class="active"><img src="../assets/logo.svg"></a>
+        <a href="../html/about.html">About</a>
+        <a href="../html/locations.html">Location</a>
+        <a href="../html/careers.html">Careers</a>
+        
+        <div class="footer-links-icons">
+          <img src="../assets/icons/facebook.svg">
+          <img src="../assets/icons/twitter.svg">
+          <img src="../assets/icons/instagram.svg">
+        </div>
+      </div>
+    </div>  
+  </footer>
+
+  <script> 
+    const hamburgerMenu = document.querySelector('.nav-mobile')
+    const hamburgerMenuIcon = document.querySelector('.nav-mobile i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    hamburgerMenu.onclick = function(){
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+      hamburgerMenuIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars"
+    }
+  </script> 
+</body>
+</html>

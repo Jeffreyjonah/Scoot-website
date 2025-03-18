@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Scoot Location</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+     <div class="app"> 
+        <a href="../index.html" class="scoot-image"><img src="../assets/logo.svg"></a>
+        <nav class=nav-bar>
+          <a href="../html/about.html">About</a>
+          <a href="../html/locations.html">Location</a>
+          <a href="../html/careers.html">Careers</a>
+        </nav>
+      </div>  
+      <button class="get">Get Scootin</button>
+      <div class="nav-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/locations.html">Location</a></li>
+      <li><a href="../html/careers.html">Careers</a></li>
+      
+      <button class="getting">Get Scootin</button>
+    </div>
+
+    <div class="career">
+      <img src="../assets/images/careers-locations-hero-desktop.jpg">
+      <h1 class="career-text">Location</h1>
+      <div class="career-circles">
+        <img src="../assets/patterns/white-circles.svg">
+      </div>
+    </div>
+  </header>  
+    <div class="world-map">
+      <img src="../assets/images/world-map-desktop.png">
+    </div>
+
+    <div class="mobile-map">
+      <img src="../assets/images/world-map-mobile.png">
+    </div>
+
+    <div class="cities">
+      <div class="london">New York</div>
+      <div class="london">London</div>
+      <div class="london">Jakarta</div>
+      <div class="london">Yokohama</div>
+    </div>
+    
+    <div class="map-container">
+      <div class="map-text">
+        Your city not listed?
+      </div>
+
+      <div class="map-message">
+        If you'd like to see Scoot in your hometown, be sure to let us <br class="break">know. We track requests and plan launches based on <br class="break">demand. Feel free to message us by clicking the link or messaging us on social. 
+      </div>
+
+      <button class="message-button">
+        Message Us
+      </button>
+    </div>    
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content1">
+          <h1 class="footer-text">Sign up and <br>Scoot off today</h1>
+        </div>
+        
+        <div class="footer-icons">
+          <div class="icon1"><img src="../assets/icons/app-store.svg"></div>
+        <div class="icon2"><img src="../assets/icons/google-play.svg"></div>
+        </div>
+        <div class="footer-content2">
+          <img src="../assets/patterns/white-circles.svg">
+        </div>
+      </div>
+      <div class="footer-links-container">
+        <div class="links">
+          <a href="../index.html" class="active"><img src="../assets/logo.svg"></a>
+          <a href="../html/about.html">About</a>
+          <a href="../html/locations.html">Location</a>
+          <a href="../html/careers.html">Careers</a>
+          
+          <div class="footer-links-icons">
+            <img src="../assets/icons/facebook.svg">
+            <img src="../assets/icons/twitter.svg">
+            <img src="../assets/icons/instagram.svg">
+          </div>
+        </div>
+      </div>  
+    </footer>
+    <script> 
+      const hamburgerMenu = document.querySelector('.nav-mobile')
+      const hamburgerMenuIcon = document.querySelector('.nav-mobile i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+  
+      hamburgerMenu.onclick = function(){
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        hamburgerMenuIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars"
+      }
+    </script> 
+</body>
+</html>
